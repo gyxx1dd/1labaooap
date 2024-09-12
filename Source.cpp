@@ -57,17 +57,15 @@ public:
 
 int main() {
     setlocale(LC_ALL, "Ukr");
-    Baggage* baggage1 = new Baggage("BAG123", 23.5, "Валіза");
-    Baggage* baggage2 = new Baggage("BAG456", 12.0, "Ручна поклажа");
-    Passenger passenger1("Олег Іванов", "AA123456", baggage1);
-    Passenger passenger2("Наталія Петренко", "BB654321", baggage2);
-    cout << "Інформація про пасажира 1:" << endl;
+    Baggage* baggage1 = new Baggage("BAG123", 23.5, "Г‚Г Г«ВіГ§Г ");
+    Baggage* baggage2 = new Baggage("BAG456", 12.0, "ГђГіГ·Г­Г  ГЇГ®ГЄГ«Г Г¦Г ");
+    Passenger passenger1("ГЋГ«ГҐГЈ ВІГўГ Г­Г®Гў", "AA123456", baggage1);
+    Passenger passenger2("ГЌГ ГІГ Г«ВіГї ГЏГҐГІГ°ГҐГ­ГЄГ®", "BB654321", baggage2);
+    cout << "ВІГ­ГґГ®Г°Г¬Г Г¶ВіГї ГЇГ°Г® ГЇГ Г±Г Г¦ГЁГ°Г  1:" << endl;
     passenger1.displayPassengerInfo();
     cout << endl;
-    cout << "Інформація про пасажира 2:" << endl;
+    cout << "ВІГ­ГґГ®Г°Г¬Г Г¶ВіГї ГЇГ°Г® ГЇГ Г±Г Г¦ГЁГ°Г  2:" << endl;
     passenger2.displayPassengerInfo();
     cout << endl;
-    delete baggage1;
-    delete baggage2;
     return 0;
 }
